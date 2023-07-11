@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>MimeTypes35</id>
+    <version>$version$</version>
+    <title>MimeTypes35</title>
+    <authors>Yurt</authors>
+    <owners>Yurt</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>http://opensource.org/licenses/Apache-2.0</licenseUrl>
+    <projectUrl>https://github.com/huyurt/MimeTypes35</projectUrl>
+    <description>Provides mapping of file extensions to mime types and mime types to file extensions.</description>
+    <summary>Provides mapping of file extensions to mime types and mime types to file extensions.</summary>
+    <releaseNotes>First commit</releaseNotes>
+    <language>en-US</language>
+  </metadata>
+</package>
