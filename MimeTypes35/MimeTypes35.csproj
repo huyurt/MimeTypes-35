@@ -7,8 +7,8 @@
     <ProjectGuid>{9F904845-86C8-486A-AE67-EF7175AF1519}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MimeTypes_35</RootNamespace>
-    <AssemblyName>MimeTypes-35</AssemblyName>
+    <RootNamespace>MimeTypes35</RootNamespace>
+    <AssemblyName>MimeTypes35</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -44,7 +44,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="MimeTypes-35.nuspec" />
+    <None Include="MimeTypes35.nuspec" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -7,11 +7,15 @@
     <authors>Yurt</authors>
     <owners>Yurt</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <licenseUrl>http://opensource.org/licenses/Apache-2.0</licenseUrl>
+    <license type="file">LICENSE.txt</license>
     <projectUrl>https://github.com/huyurt/MimeTypes35</projectUrl>
+    <readme>README.md</readme>
     <description>Provides mapping of file extensions to mime types and mime types to file extensions.</description>
     <summary>Provides mapping of file extensions to mime types and mime types to file extensions.</summary>
-    <releaseNotes>First commit</releaseNotes>
     <language>en-US</language>
   </metadata>
+  <files>
+      <file src="..\LICENSE.txt" target="" />
+	  <file src="..\README.md" target="" />
+  </files>
 </package>

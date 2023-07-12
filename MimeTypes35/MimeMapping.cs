@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace MimeTypes35
 {
-    public class MimeMapping
+    internal class MimeMapping
     {
         private static Dictionary<string, string> _originalMapping =
             new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase)

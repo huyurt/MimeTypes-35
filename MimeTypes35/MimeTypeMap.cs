@@ -30,27 +30,6 @@ namespace MimeTypes35
         }
 
         /// <summary>
-        /// Gets the MIME(s) by file extension.
-        /// </summary>
-        /// <param name="extension">The file extension</param>
-        /// <returns>List&lt;System.String&gt;Mime List.</returns>
-        /// <remarks>if there is no matching mimetype then will return "application/octet-stream"</remarks>
-        public static IEnumerable<string> GetMimeTypes(string extension)
-        {
-            if (string.IsNullOrEmpty(extension?.Trim()))
-            {
-                throw new ArgumentNullException(nameof(extension), "extension argument is null or empty.");
-            }
-
-            if (!extension.StartsWith("."))
-            {
-                extension = $".{extension}";
-            }
-
-            return Mappings.TryGetValue(extension, out List<string> mime) ? mime : new List<string>() { "application/octet-stream" };
-        }
-
-        /// <summary>
         /// Gets the MIME by file extension.
         /// </summary>
         /// <param name="extension">The file extension</param>
@@ -63,12 +42,41 @@ namespace MimeTypes35
                 throw new ArgumentNullException(nameof(extension), "extension argument is null or empty.");
             }
 
-            if (!extension.StartsWith("."))
+            if (extension.Contains("."))
+            {
+                extension = System.IO.Path.GetExtension(extension);
+            }
+            else
             {
                 extension = $".{extension}";
             }
 
             return Mappings.TryGetValue(extension, out List<string> mime) ? mime.First() : "application/octet-stream";
+        }
+
+        /// <summary>
+        /// Gets the MIME(s) by file extension.
+        /// </summary>
+        /// <param name="extension">The file extension</param>
+        /// <returns>List&lt;System.String&gt;Mime List.</returns>
+        /// <remarks>if there is no matching mimetype then will return "application/octet-stream"</remarks>
+        public static IEnumerable<string> GetMimeTypes(string extension)
+        {
+            if (string.IsNullOrEmpty(extension?.Trim()))
+            {
+                throw new ArgumentNullException(nameof(extension), "extension argument is null or empty.");
+            }
+
+            if (extension.Contains("."))
+            {
+                extension = System.IO.Path.GetExtension(extension);
+            }
+            else
+            {
+                extension = $".{extension}";
+            }
+
+            return Mappings.TryGetValue(extension, out List<string> mime) ? mime : new List<string>() { "application/octet-stream" };
         }
 
         /// <summary>

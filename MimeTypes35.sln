@@ -5,6 +5,8 @@ VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MimeTypes35", "MimeTypes35\MimeTypes35.csproj", "{9F904845-86C8-486A-AE67-EF7175AF1519}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MimeTypes35.UnitTest", "MimeTypes35.UnitTest\MimeTypes35.UnitTest.csproj", "{A5FB5041-B016-48DD-AEB0-7CDB0C68D38D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{9F904845-86C8-486A-AE67-EF7175AF1519}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F904845-86C8-486A-AE67-EF7175AF1519}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F904845-86C8-486A-AE67-EF7175AF1519}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5FB5041-B016-48DD-AEB0-7CDB0C68D38D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5FB5041-B016-48DD-AEB0-7CDB0C68D38D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5FB5041-B016-48DD-AEB0-7CDB0C68D38D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5FB5041-B016-48DD-AEB0-7CDB0C68D38D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
